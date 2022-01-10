@@ -48,7 +48,7 @@ auth = authFile.readline()
 authFile.close()
 
 headers = {
-    'authorization': auth
+    'authorization': auth.replace("\n", "")
 }
 
 #Get random status
